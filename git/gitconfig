@@ -1,0 +1,28 @@
+[user]
+	name = Clarke Brunsdon
+	email = clarke@freerunningtechnologies.com
+[log]
+  	decorate = on
+[color]
+	branch = auto
+	diff = auto
+	interactive = auto
+	status = auto
+[alias]
+  s = status --short --branch
+	graph = log --graph --oneline
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%Creset' --abbrev-commit --date=relative
+[init]
+	templatedir = ~/.git_template
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = false
+[merge]
+	tool = vimdiff
+[apply]
+  whitespace = fix
+[core]
+	excludesfile = /home/clarke/.gitignore_global
+	editor = vim
+  whitespace = trailing-space,space-before-tab

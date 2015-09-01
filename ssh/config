@@ -1,0 +1,30 @@
+# ~/.ssh/config
+# vim:set ft=sshconfig:
+Host *
+ ControlPath ~/.ssh/master-%r@%h:%p
+ ControlMaster auto
+
+Host geekserv
+  User clarke
+
+Host reaver
+  HostName reaver.nullfs.com
+
+Host boxer
+  HostName boxer.freerunningtech.com
+  ForwardAgent yes
+
+Host parting
+  ProxyCommand ssh boxer exec nc parting %p
+
+Host do
+  HostName clarke.freerunningtech.com
+  User clarke
+
+Host gerrit
+  User clarke
+  HostName gerrit.freerunningtech.com
+  port 29418
+
+Host github.com
+  ProxyCommand ssh -q -p 2222 boxer.freerunningtech.com nc -q0 -w1 github.com 22

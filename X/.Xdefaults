@@ -1,0 +1,14 @@
+! urxvt background
+URxvt*foreground: #ffffff
+URxvt*background: #000000
+
+! terminus for fonts
+URxvt*font: xft:terminus:pixelsize=19 
+
+! hide pointer when typing
+URxvt*pointerBlank: false
+
+! nobody likes scroll bars. but we like lots of scroll buffers.
+URxvt*scrollBar: false
+URxvt*saveLines: 12000
+

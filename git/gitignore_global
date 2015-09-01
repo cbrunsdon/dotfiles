@@ -1,0 +1,13 @@
+.rvmrc
+/public/assets
+*.swp
+webrat.log
+\.ruby-version
+\.ruby-gemset
+.envrc
+vendor/bundle
+core/vendor/bundle
+/config/database.yml
+config/database.yml
+*/database.yml
+tags
